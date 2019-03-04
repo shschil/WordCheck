@@ -1,5 +1,7 @@
-/**
- * Java program to count the number of valid words in a given string, using local dictionary.
+/*
+  Java program to count the number of valid words in a given string, using local dictionary.
+  Mac OS: /usr/share/dict/web2
+  Linux: /usr/share/dict/
  */
 
 import java.io.FileNotFoundException;
@@ -10,7 +12,7 @@ import java.util.Scanner;
 
 public class WordCheck {
 
-    public static boolean real_word(String word) throws FileNotFoundException {
+    private static boolean real_word(String word) throws FileNotFoundException {
         try {
             BufferedReader dictionary = new BufferedReader(new FileReader(
                     "/usr/share/dict/web2")); //For Mac OS
